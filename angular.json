@@ -30,9 +30,26 @@
               "src/assets"
             ],
             "styles": [
+              {
+                "input": "node_modules/primeng/resources/primeng.min.css",
+                "bundleName": "primeicons"
+                },
+                {
+                "input": "node_modules/primeng/resources/themes/lara-light-blue/theme.css",
+                "bundleName": "primeng"
+                },
+                {
+                  "input": "node_modules/bootstrap/scss/bootstrap.scss",
+                  "bundleName": "bootstrap"
+                  },
               "src/styles.scss"
             ],
-            "scripts": [],
+            "scripts": [
+              {
+                "input":"./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+                "bundleName": "bootstrap"
+                }
+            ],
             "server": "src/main.server.ts",
             "prerender": true,
             "ssr": {
