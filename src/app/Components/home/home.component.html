@@ -12,8 +12,8 @@
     <p class="text-gray-700 text-base "><i class="pi pi-book m-2"></i>مقال2</p>
     <p class="text-gray-700 text-medium "><i class="pi pi-book m-2"></i>test</p>
   </div>
-  <div class="px-6 py-4 justify-content-lg-end">
-    <a class="inline-block  px-3 py-1 text-sm font-semibold text-gray-700 mr-2">View All
+  <div class="px-6 py-4 justify-content-end align-items-end ">
+    <a class="inline-block px-3 py-1 text-sm font-semibold text-gray-700 mr-2">View All
       <i class="pi pi-chevron-right m-1 small"></i>
      </a>
   </div>
@@ -22,15 +22,52 @@
 </div>
 
 <!-- tab view -->
-<div class="container p-5">
-  <div class="card text-gray-800 fw-medium">
+
+<div class="container p-2">
+  <div class="card text-gray-800 fw-bold   ">
     <p-tabView>
-    <p-tabPanel *ngFor="let tab of tabs" [header]="tab.title">
-        <p>
+      <p-tabPanel *ngFor="let tab of tabs" [header]="tab.title" [selected]="tab.active" [styleClass]="{ 'active-tab': tab.active }">
+        <div class="max-w-sm rounded overflow-hidden shadow-lg p-tabview-title">
+          <div class="px-6 py-4">
+            <div class="font-men text-xl mb-2 fw-bold ">{{ tab.title }}</div>
+            <p class="text-base">
+              <i class="pi pi-book m-2"></i>{{ tab.content }}
+            </p>
+          </div>
+          <div class="px-6 py-4 justify-content-end align-items-end">
+            <a class="inline-block px-3 py-1 text-sm font-semibold text-gray-700 ml-2">View
+              <i class="pi pi-chevron-right m-1 small"></i>
+            </a>
+          </div>
+        </div>
+      </p-tabPanel>
+    </p-tabView>
+  </div>
+</div>
+
+
+
+
+<!-- <div class="container p-5">
+  <div class="card text-gray-800 fw-medium">
+    <p-tabView >
+  <p-tabPanel *ngFor="let tab of tabs" [header]="tab.title">
+      <div class="max-w-sm rounded overflow-hidden shadow-lg ">
+        <div class="px-6 py-4 ">
+          <div class="font-men text-xl mb-2 ">{{tab.title}}</div>
+          <p class=" text-base "><i class="pi pi-book m-2"></i>{{tab.content}}</p>
+        </div>
+        <div class="px-6 py-4 justify-content-end align-items-end ">
+          <a class="inline-block px-3 py-1 text-sm font-semibold text-gray-700 ml-2">View
+            <i class="pi pi-chevron-right m-1 small"></i>
+           </a>
+        </div>
+      </div> -->
+        <!-- <p>
             {{ tab.content }}
-        </p>
-    </p-tabPanel>
+        </p> -->
+    <!-- </p-tabPanel>
     </p-tabView>
     </div>
 
-</div>
+</div> -->

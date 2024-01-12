@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { LanguageComponent } from "../language/language.component";
 import { ThemeComponent } from "../theme/theme.component";
@@ -15,6 +15,17 @@ import { FormsModule } from '@angular/forms';
     imports: [FormsModule,SearchPipe,CommonModule,RouterModule, LanguageComponent, ThemeComponent, NotificationComponent, UserinfoComponent]
 })
 export class NavbarComponent {
-
     searchtext:any;
+
+    @HostListener('window:scroll', ['$event'])
+
+    onWindowScroll() {
+        let element = document.querySelector('.mynavbar') as HTMLElement;
+        if (window.pageYOffset > 210) {
+          element.classList.add('navbar-inverse');
+        } else {
+          element.classList.remove('navbar-inverse');
+        }
+
+}
 }

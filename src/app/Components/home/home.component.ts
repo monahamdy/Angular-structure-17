@@ -13,13 +13,13 @@ import { TabViewModule } from 'primeng/tabview';
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class HomeComponent implements OnInit {
-  tabs: { title: string, content: string }[] = [];
+  tabs: { title: string, content: string,active:boolean }[] = [];
 
   ngOnInit() {
       this.tabs = [
-          { title: 'Latest Articles', content: 'مقال2' },
-          { title: 'Popular Articles', content: 'test' },
-          { title: 'Favorites Articles ', content: 'مقال3' }
+          { title: 'Latest Articles', content: 'مقال2',active: true },
+          { title: 'Popular Articles', content: 'test',active: false },
+          { title: 'Favorites Articles ', content: 'مقال3',active: false }
       ];
   }
 }

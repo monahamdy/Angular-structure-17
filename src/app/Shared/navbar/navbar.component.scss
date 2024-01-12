@@ -1,10 +1,14 @@
 
+.navbar-inverse {
+  background-color: #0140cb;
+}
+
 .hero {
   height: 40vh;
   background-image: url('../../../assets/images/home/home3.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center ;
+  background-position: center;
 }
 h1{
   font-size: 20px;
