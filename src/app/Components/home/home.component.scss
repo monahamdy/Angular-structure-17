@@ -7,6 +7,8 @@ ul.p-tabview-nav{
   list-style-type: none;
 
 }
+
+
 // .p-ink {
 //   display: block;
 //   position: absolute;
@@ -14,11 +16,17 @@ ul.p-tabview-nav{
 //   border-radius: 100%;
 //   transform: scale(0);
 // }
-.p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
-  background: #ffffff;
-  border-color: #3B82F6;
-  color: #3B82F6;
-}
+// .p-tabview-nav-link
+
+
+:host:ng-deep{
+p-tabview .p-tabview-nav
+li.p-highlight  a {
+ color: #ffffff;
+ background-color:#3B82F6 !important ;
+  // border-bottom: 1px solid  #3B82F6 !important ;
+  // color: #3B82F6;
+}}
 .p-tabview .p-tabview-panels {
   background: #ffffff;
   padding: 1.25rem;

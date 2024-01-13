@@ -133,7 +133,7 @@
   </div>
 </div> -->
 
-<div class="card flex justify-content-center">
+ <div class="card flex justify-content-center">
   <p-sidebar #sidebarRef [(visible)]="sidebarVisible">
       <ng-template pTemplate="headless">
           <div class="flex flex-column h-full">
@@ -171,7 +171,7 @@
                       <span class="font-semibold text-2xl text-primary">Your Logo</span>
                   </span>
                   <span>
-                      <p-button type="button" (click)="closeCallback($event)" icon="pi pi-times" rounded="true" outlined="true" styleClass="h-2rem w-2rem"></p-button>
+                      <p-button type="button" (click)="closeCallback($event)" icon="pi pi-times"  styleClass="h-2rem w-2rem"></p-button>
                   </span>
               </div>
               <div class="overflow-y-auto">
@@ -329,5 +329,16 @@
           </div>
       </ng-template>
   </p-sidebar>
-  <p-button (click)="sidebarVisible = true" icon="pi pi-arrow-right"></p-button>
+
   </div>
+  <p-button (click)="sidebarVisible = true" icon="pi pi-arrow-right"></p-button>
+<!--
+    <p-sidebar [(visible)]="sidebarVisible">
+        <h3>Sidebar</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+    </p-sidebar>
+
+<p-button (click)="sidebarVisible = true" icon="pi pi-arrow-right"></p-button> -->
