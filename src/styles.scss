@@ -1,6 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+.p-tabview .p-tabview-nav .p-tabview-nav-link {
+  background-color: transparent !important;
+}
+.p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
+  color: #ffffff;
+  background-color: #3b82f6 !important ;
+  // border-bottom: 1px solid  #3B82F6 !important ;
+  // color: #3B82F6;
+}
+
+.change-bank-modal {
+  .p-dialog-header {
+    display: none;
+  }
+}
 @import "bootstrap/scss/bootstrap";
 @import "primeicons/primeicons.css";
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";

@@ -1,21 +1,10 @@
-.footer{
-  background-image: url('../../../assets/images/home/home3.jpeg');
+.footer {
+  background-image: url("../../../assets/images/home/home3.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  .footer_text{
-    color:white;
-    font-size:13px ;
-
+  .footer-text {
+    color: white;
+    font-size: 13px;
   }
 }
-// @media (max-width: 767px) {
-//   .w-75 {
-//     width: 100% !important;
-//   }
-// }
-// @media (max-width: 567px) {
-//   .footer {
-//     padding-bottom: 6rem !important;
-//   }
-// }

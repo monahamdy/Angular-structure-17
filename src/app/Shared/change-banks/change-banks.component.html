@@ -1,17 +1,17 @@
-<div class="change-bank " >
-  <p-inputGroup>
-    <p-inputGroupAddon>
-        <i class="pi pi-search"></i>
+<div class="change-bank ">
+  <p-inputGroup class="bg-black rounded pe-0">
+    <p-inputGroupAddon class="bg-transparent">
+      <i class="pi pi-search"></i>
     </p-inputGroupAddon>
-    <input type="search"pInputText placeholder="Search for bank" (keyup)="filterData()" />
+    <input type="search" pInputText placeholder="Search for bank" class="bg-transparent" (keyup)="filterData()" />
   </p-inputGroup>
 
-<div class="flex flex-column gap-3 p-3">
-  <div *ngFor="let item of items" class="field-checkbox">
+  <div class="flex flex-column gap-3 p-3">
+    <div *ngFor="let item of items" class="field-checkbox">
       <p-radioButton [inputId]="item.key" name="item" [value]="item" [(ngModel)]="selecteditem"></p-radioButton>
       <label [for]="item.key" class="ml-2">{{ item.name }}</label>
+    </div>
   </div>
-</div>
 
 </div>
 <!-- <button (click)="close()" class="btn btn-primary ">close</button> -->

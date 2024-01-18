@@ -1,13 +1,10 @@
-
-ul.p-tabview-nav{
+ul.p-tabview-nav {
   display: inline-flex;
   min-width: 100%;
   margin: 0;
   padding: 0;
   list-style-type: none;
-
 }
-
 
 // .p-ink {
 //   display: block;
@@ -18,15 +15,9 @@ ul.p-tabview-nav{
 // }
 // .p-tabview-nav-link
 
+// :host:ng-deep {
 
-:host:ng-deep{
-p-tabview .p-tabview-nav
-li.p-highlight  a {
- color: #ffffff;
- background-color:#3B82F6 !important ;
-  // border-bottom: 1px solid  #3B82F6 !important ;
-  // color: #3B82F6;
-}}
+// }
 .p-tabview .p-tabview-panels {
   background: #ffffff;
   padding: 1.25rem;
@@ -39,8 +30,7 @@ li.p-highlight  a {
   display: none;
   z-index: 1;
 }
-.p-tabview-title
-{
+.p-tabview-title {
   line-height: 1;
   white-space: nowrap;
 }
@@ -49,5 +39,5 @@ li.p-highlight  a {
   border: var(--card-border);
   padding: 2rem;
   border-radius: 10px;
-  margin-bottom: 1rem
+  margin-bottom: 1rem;
 }

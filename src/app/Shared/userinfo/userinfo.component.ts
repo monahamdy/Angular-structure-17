@@ -7,25 +7,26 @@ import { DialogService, DynamicDialogModule } from 'primeng/dynamicdialog';
   imports: [DynamicDialogModule],
   templateUrl: './userinfo.component.html',
   styleUrl: './userinfo.component.scss',
-  providers:[DialogService]
+  providers: [DialogService]
 })
 export class UserinfoComponent {
 
-  constructor(private dialogService:DialogService){
+  constructor(private dialogService: DialogService) {
 
   }
   OpenAllBanks() {
-    const ref   = this.dialogService.open(ChangeBanksComponent, {
-        header: 'Select a Bank',
-        width: '50%',
-        contentStyle: { overflow: 'auto' },
-        baseZIndex: 10000,
-        maximizable: true
+    const ref = this.dialogService.open(ChangeBanksComponent, {
+      header: '',
+      width: '50%',
+      contentStyle: { overflow: 'auto' },
+      baseZIndex: 10000,
+      maximizable: true,
+      styleClass: 'change-bank-modal'
     });
 
     ref.onClose.subscribe((res: any) => {
-        console.log(res)
+      console.log(res)
     });
-}
+  }
 
 }
