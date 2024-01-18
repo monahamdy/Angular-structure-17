@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { ChangeBanksComponent } from '../change-banks/change-banks.component';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { DialogService, DynamicDialogModule } from 'primeng/dynamicdialog';
 @Component({
   selector: 'app-userinfo',
@@ -11,17 +10,14 @@ import { DialogService, DynamicDialogModule } from 'primeng/dynamicdialog';
   providers:[DialogService]
 })
 export class UserinfoComponent {
-change: any;
-banks: any;
-  private modalService: NgbModal = new NgbModal;
 
   constructor(private dialogService:DialogService){
 
   }
   OpenAllBanks() {
     const ref   = this.dialogService.open(ChangeBanksComponent, {
-        header: 'Select a Product',
-        width: '70%',
+        header: 'Select a Bank',
+        width: '50%',
         contentStyle: { overflow: 'auto' },
         baseZIndex: 10000,
         maximizable: true

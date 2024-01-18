@@ -1,0 +1,12 @@
+input{
+  width: 500px;
+padding:5px 10px 5px 10px;
+
+}
+:host:ng-deep{
+.p-dialog-title{
+  display:none !important;
+
+}
+}
+
