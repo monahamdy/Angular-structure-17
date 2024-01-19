@@ -58,27 +58,12 @@
   <div class="bg-white rounded-bottom-3 mx-3" [class.hidden]="collapse" id="mobile-menu">
     <div class="space-y-1 px-2 pb-3 pt-2">
       <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-      <a href="#" class="block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Home</a>
-      <a href="#" class="text-gray-300  hover:text-white block rounded-md px-3 py-2 text-base font-medium">Exams</a>
-      <a href="#" class="text-gray-300  hover:text-white block rounded-md px-3 py-2 text-base font-medium">Courses</a>
+      <a class="block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Home</a>
+      <a class="text-gray-300 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Exams</a>
+      <a class="text-gray-300 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Courses</a>
     </div>
   </div>
 
 </nav>
 
 
-<!-------- hero section  -->
-<section class="hero p-5">
-  <div class="container p-5">
-    <div class="row justify-content-center fw-bold">
-      <div class="col-lg-6  ">
-        <h1>How can we help you</h1>
-        <div class="search-container d-flex">
-          <input type="search" class="form-control" placeholder="Search for articles" name="search"
-            (keyup)="onchange($event)">
-          <button type="submit" class="btn btn-primary bg-white"><i class="pi pi-search text-black-50"></i></button>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>

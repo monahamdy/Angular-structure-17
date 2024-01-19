@@ -2,16 +2,37 @@
   <div class="dropdown">
     <button class="dropdown-toggle flex items-center text-white" type="button" data-bs-toggle="dropdown"
       aria-expanded="false">
-      <a class="text-white text-lg font-semibold"><img class="h-8 w-8 rounded-full"
+      <a class="text-white text-lg font-semibold">
+        <img class="h-8 w-8 rounded-full"
           src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-          alt=""></a>
+          alt="">
+        </a>
     </button>
     <ul class="dropdown-menu ">
-      <li><a class="dropdown-item  "><i class="fas fa-user m-2"></i> My Profile</a></li>
-      <li><a class="dropdown-item"><i class="fa-solid fa-laptop m-2"></i>Dashboard</a></li>
-      <li><a (click)="OpenAllBanks()" class="dropdown-item"><i class="fa-solid fa-arrow-left m-2"></i>change
-          Bank</a></li>
-      <li><a class="dropdown-item"><i class="fa-solid fa-lock-open m-2"></i>Log Out</a></li>
+      <li>
+        <a class="dropdown-item">
+          <i class="fas fa-user m-2"></i>
+         <span>My Profile</span>
+        </a>
+        </li>
+      <li>
+        <a class="dropdown-item">
+          <i class="fa-solid fa-laptop m-2"></i>
+          <span>Dashboard</span>
+        </a>
+        </li>
+      <li>
+        <a (click)="OpenAllBanks()" class="dropdown-item">
+          <i class="fa-solid fa-arrow-left m-2"></i>
+          <span>change Bank</span>
+          </a>
+        </li>
+      <li>
+        <a class="dropdown-item">
+          <i class="fa-solid fa-lock-open m-2"></i>
+          <span>Log Out</span>
+        </a>
+      </li>
     </ul>
 
   </div>

@@ -14,10 +14,8 @@ import { RadioButtonModule } from 'primeng/radiobutton';
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class ChangeBanksComponent implements OnInit {
-  value: string | undefined;
-  term:string ="";
+ 
   selecteditem: any = null;
-  newsearch:any =[];
 
   constructor(private ref:DynamicDialogRef){
 
@@ -31,17 +29,15 @@ export class ChangeBanksComponent implements OnInit {
 
     ngOnInit() {
         this.selecteditem = this.items[1];
-        this.newsearch=this.items;
     }
 
 close(){
   this.ref.close({isClosed:true});
 }
 
-filterData(){
-this.newsearch=this.items.filter((i)=>{
-return i.name.toLocalLoweCase().includes(this.term.toLocaleLowerCase())
-})
+filterData(event: any): void {
+  console.log(event?.target?.value);
+
 }
 
 }

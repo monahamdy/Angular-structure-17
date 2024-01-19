@@ -32,8 +32,5 @@ export class NavbarComponent {
   toggleMenu(): void {
     this.collapse = !this.collapse;
   }
-  onchange(event: any): void {
-    console.log(event?.target?.value);
 
-  }
 }
